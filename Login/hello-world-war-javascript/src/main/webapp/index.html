@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+
+	Username: <input type="text" name="username" value="Admin"> </br> 
+	Password: <input type="password" name="password" value="Password"> </br>
+	<input onclick="callToServer()" type="button" value="Submit">
+
+	<script type="text/javascript">
+	
+		function callToServer(){
+			var xhr = new XMLHttpRequest();
+ 			xhr.open('GET', "loginForm", true);
+			xhr.send();
+			 
+			xhr.onreadystatechange = processRequest;
+			 
+			function processRequest(e) {
+			    if (xhr.readyState == 4 && xhr.status == 200) {
+			        alert(xhr.response); // no parsing needed
+			    }
+			}
+		}
+	</script>
+</body>
+</html>
