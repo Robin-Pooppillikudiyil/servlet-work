@@ -8,7 +8,7 @@
 $(document).ready(function(){
 	$("button").click(function(){
 		
-		$.post("loginForm?username=admin&password=dev123",function(data){
+		$.post("loginForm1?username=admin&password=dev123",function(data){
 			//alert("Data:"+data);
 			
 			//document.getElementById("serverData").innerHTML=data;
@@ -28,5 +28,3 @@ $(document).ready(function(){
 </body>
 
 </html>
-
-
