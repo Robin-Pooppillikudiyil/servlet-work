@@ -9,7 +9,7 @@ import com.test.signup.controller.RegisterServlet;
 import com.test.signup.util.DBConnection;
 
 /**
- * @author Robin_pooppillikudiyil
+ * @author Robin_Pooppillikudiyil
  * @version 1.0.1
  */
 public class RegisterDao {
