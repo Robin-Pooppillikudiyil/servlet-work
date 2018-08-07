@@ -12,7 +12,7 @@
 		<description></description>
 		<display-name>RegisterServlet</display-name>
 		<servlet-name>RegisterServlet</servlet-name>
-		<servlet-class>com.lxisoft.facebookApp2.controller.RegisterServlet</servlet-class>
+		<servlet-class>com.test.signup.controller.RegisterServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>

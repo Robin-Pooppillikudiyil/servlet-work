@@ -11,7 +11,7 @@ import com.test.signup.Dao.RegisterDao;
 import com.test.signup.bean.RegisterBean;
 
 /**
- * @author Robin_pooppillikudiyil
+ * @author Robin_Pooppillikudiyil
  * @version 1.0.1
  */
 public class RegisterServlet extends HttpServlet {
