@@ -1,7 +1,7 @@
 package com.test.signup.bean;
 
 /**
- * @author Robin_pooppillikudiyil
+ * @author Robin_Pooppillikudiyil
  * @version 1.0.1
  */
 
