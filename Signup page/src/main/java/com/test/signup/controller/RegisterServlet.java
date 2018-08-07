@@ -14,6 +14,7 @@ import com.test.signup.bean.RegisterBean;
  * @author Robin_Pooppillikudiyil
  * @version 1.0.1
  */
+
 public class RegisterServlet extends HttpServlet {
 
 	private static final long serialVersionUID = -7411975908906080224L;
@@ -25,6 +26,7 @@ public class RegisterServlet extends HttpServlet {
 		/**
 		 * Copying all the input parameters in to local variables
 		 */
+		
 		sfl4jlogger.trace("Entered RegisterServlet dopost method");
 		String fullName = request.getParameter("fullname");
 		String email = request.getParameter("email");
@@ -38,6 +40,7 @@ public class RegisterServlet extends HttpServlet {
 		/**
 		 * Using Java Beans - An easiest way to play with group of related data
 		 */
+		
 		registerBean.setFullName(fullName);
 		registerBean.setEmail(email);
 		registerBean.setUserName(userName);
@@ -46,14 +49,16 @@ public class RegisterServlet extends HttpServlet {
 		RegisterDao registerDao = new RegisterDao();
 
 		/**
-		 * The core Logic of the Registration application is present here. We
-		 * are going to insert user data in to the database.
+		 * The core Logic of the Registration application is present here.
+		 * We are going to insert user data in to the database.
 		 *
 		 */
 		String userRegistered = registerDao.registerUser(registerBean);
+		
 		/**
 		 * On success, you can display a message to user on UserLogin page
 		 */
+		
 		if (userRegistered.equals("SUCCESS")) {
 			request.getRequestDispatcher("/Login.jsp").forward(request, response);
 		} else // On Failure, display a meaningful message to the User.
