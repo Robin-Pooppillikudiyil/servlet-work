@@ -1,0 +1,18 @@
+body{
+
+     background-color:lightblue;
+	 
+}
+div#header{
+	 background-color:lightgreen;
+	 padding:40px
+}
+
+div#division{
+	
+	 background-color:lightgray;
+	 padding:10px;
+}
+div#center{
+	background-image:url("download.Jpg");
+}
